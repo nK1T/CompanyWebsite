@@ -1,0 +1,30 @@
+.tap-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--blue);
+    color: #fff;
+    width: 60px; /* Set the width and height to create a perfect circle */
+    height: 60px;
+    border-radius: 50%; /* Set border-radius to 50% to create a circle */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Center the arrow icon horizontally */
+    align-items: center; /* Center the arrow icon vertically */
+    font-size: 24px;
+    z-index: 1;
+  }
+  
+  .tap-to-top .arrow-up {
+    line-height: 1;
+    color: #fdc807;
+  }
+  .tap-to-top:hover{
+    background-color: #fdc807;
+  }
+  .tap-to-top:hover .arrow-up{
+    line-height: 1;
+    color: var(--blue);
+  }
+  

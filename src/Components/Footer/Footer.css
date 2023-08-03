@@ -1,0 +1,98 @@
+.f-container{
+    border-top: 3px solid #bababa;
+    background-size: cover;
+    padding-top:4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.f-left{
+    justify-content: center;
+    gap: 1rem;
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+}
+.f-right{
+    justify-content: center;
+    gap: .5rem;
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+}
+
+.f-right>:nth-child(1){
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fdc807;
+}
+.f-right>:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.f-menu{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width:760px) {
+    .f-container {
+        row-gap: 0;
+        padding-top: 2rem;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+  
+    .f-left,
+    .f-right {
+      text-align: center;
+    }
+  
+    .f-left {
+      margin-bottom: 1rem;
+    }
+  
+    .f-right>:nth-child(1){
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fdc807;
+}
+.f-right>:nth-child(2){
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+.f-menu{
+    font-size: .7rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+}

@@ -1,0 +1,133 @@
+.s-container{
+    padding-top:7rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.s-left{
+    justify-content: center;
+    gap: 2rem;
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+}
+.img-container{
+    width: 40rem;
+    height: 35rem;
+    overflow: hidden;
+}
+.img-container>img{
+    width: 100%;
+}
+
+.s-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.s-container>div{
+    flex: 1;
+}
+
+.s-right{
+    gap: .5rem;
+}
+
+.s-right>:nth-child(1){
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fdc807;
+}
+.s-right>:nth-child(2){
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    padding: 10px;
+    background: #eeeeff;
+    border-radius: 5px;
+}
+.icon svg{
+    fill: #fdc807;
+}
+.icon-heading{
+    font-weight: bold;
+    font-style: 2rem;
+    color: var(--blue);
+}
+.detail{
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.511);
+}
+
+.accordion{
+    margin-top: 2rem;
+    border: none;
+}
+.accordionItem{
+    background: white;
+    border: 0.8px solid rgba(128,128,128,0.143);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.accordionButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    background: white;
+    padding: 1rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordionButton .icon-heading{
+    font-size: .9rem;
+}
+
+.accordionItem.expanded{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 6px;
+}
+
+@media screen and (max-width:760px){
+    .s-left{
+        display: none;
+    }
+    .s-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }   
+    .s-right>:nth-child(1){
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fdc807;
+    }
+    .s-right>:nth-child(2){
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--blue);
+    }
+    .s-container{
+        padding-top: 0;
+    }
+}
